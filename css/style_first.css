@@ -1,0 +1,307 @@
+.container {
+    max-width: 375px;
+    width: 100%;
+    max-height: 812px;
+    height: 100%;
+    padding-top: 305px;
+    background-image: url(../images/Pattern.svg);
+    margin: 0 auto;
+    overflow: scroll;
+}
+
+a {
+    text-decoration: none !important;
+    color: black;
+    cursor: pointer;
+}
+
+.container_second {
+    position: fixed;
+    /* visibility: hidden; */
+    top: 0;
+    left: -100%;
+    max-width: 375px;
+    width: 100%;
+    max-height: 812px;
+    height: 100%;
+    padding: 56px 7.96px 61px 7.96px;
+    overflow: scroll;
+}
+
+.two {
+    background-image: url(../images/Pattern.svg);
+}
+
+@keyframes pages {
+    0% {
+        left: -100%;
+    }
+
+    100% {
+        left: 0%;
+    }
+}
+
+@keyframes unsea {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: .0;
+        display: none;
+    }
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(../fonts/Inter-SemiBold.ttf);
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Viga';
+    src: url(../fonts/Viga-Regular.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BentonSans Medium';
+    src: url(../fonts/BentonSans\ Medium.otf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+}
+
+.masmas_food {
+    font-family: 'Viga';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 54px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    background: linear-gradient(98.81deg, #53E88B -0.82%, #15BE77 101.53%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.favorite_food {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 1px;
+    color: #09051C;
+    text-align: center;
+}
+
+.first_logo {
+    align-self: center;
+}
+
+@font-face {
+    font-family: 'BentonSans Bold';
+    src: url(../fonts/BentonSans\ Bold.otf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BentonSans Book';
+    src: url(../fonts/BentonSansBook.otf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.first_logo2 {
+    align-self: center;
+}
+
+.first_text {
+    font-family: 'BentonSans Bold';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 131.02%;
+    text-align: center;
+    color: #09051C;
+    margin-top: 38px;
+    width: 211px;
+    height: 58px;
+    align-self: center;
+}
+
+.wid {
+    width: 100%;
+}
+
+.second_text {
+    font-family: 'BentonSans Book';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 180.52%;
+    text-align: center;
+    color: #000000;
+    margin-top: 20px;
+    width: 244px;
+    height: 44px;
+    align-self: center;
+}
+
+.next {
+    font-family: 'BentonSans Bold';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 131.02%;
+    color: #FFFFFF;
+    border: 1px solid #54BD95;
+    transition: 0.3s;
+    padding: 18px 60px;
+    white-space: nowrap;
+    background: linear-gradient(98.81deg, #53E88B -0.82%, #15BE77 101.53%);
+    border-radius: 15px;
+    margin-top: 42px;
+    align-self: center;
+}
+
+.next:hover {
+    color: #E89B1B;
+}
+
+.validate {
+    font-family: 'BentonSans Bold';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 131.02%;
+    color: #FFFFFF;
+    border: 1px solid #54BD95;
+    transition: 0.3s;
+    padding: 18px 60px;
+    white-space: nowrap;
+    background: linear-gradient(98.81deg, #53E88B -0.82%, #15BE77 101.53%);
+    border-radius: 15px;
+    margin-top: 42px;
+    align-self: center;
+    cursor: pointer;
+}
+
+.validate:hover {
+    color: #E89B1B;
+}
+
+.form_page {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20.4px;
+    padding-right: 20.4px;
+}
+
+.login_in {
+    font-family: 'BentonSans Bold';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 131.02%;
+    text-align: center;
+    color: #09051C;
+    margin-top: 60px;
+}
+
+.input_email {
+    background: #FFFFFF;
+    border: 1px solid #F4F4F4;
+    box-shadow: 12px 26px 50px rgba(90, 108, 234, 0.07);
+    border-radius: 15px;
+    width: 100%;
+    height: 50px;
+    margin-top: 40px;
+}
+
+.password {
+    margin-top: 12px;
+}
+
+.input_email input {
+    font-family: 'BentonSans Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.5px;
+    mix-blend-mode: normal;
+    background: #FFFFFF;
+    border: 1px solid #F4F4F4;
+    box-shadow: 12px 26px 50px rgba(90, 108, 234, 0.07);
+    border-radius: 15px;
+    width: 100%;
+    height: 50px;
+    padding-left: 28px;
+    color: black;
+}
+
+.input_email input::placeholder {
+    color: #dadadb;
+}
+
+.or_continue {
+    font-family: 'BentonSans Bold';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 166.52%;
+    text-align: center;
+    color: #09051C;
+    margin-top: 20px;
+}
+
+.facebook {
+    display: flex;
+    padding: 16px 24px 16px 22px;
+}
+
+.text_facebook {
+    font-family: 'BentonSans Medium';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.5px;
+    color: #09051C;
+    mix-blend-mode: normal;
+    align-self: center;
+    margin-left: 13px;
+}
+
+.link {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.forgot_password {
+    font-family: 'BentonSans Medium';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 166.52%;
+    text-align: center;
+    color: #15BE77;
+    margin-top: 20px;
+}
+
+.forgot_password:hover {
+    color: #E89B1B;
+}
