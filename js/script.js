@@ -7,12 +7,14 @@ const next = document.querySelectorAll('.next')
 function validate() {
     const mail = document.getElementById('text').value
     var regx = /^([a-zA-Z0-9\._]+)@([a-zA-Z0-9])+.([a-z]+)(.[a-z]+)?$/
-    if (regx.text(mail)) {
+    if (regx.test(mail)) {
         alert('Valid Email')
+        mail.style.border = '1px solid red'
         return true
     }
     else {
         alert('Invalid Email')
+        mail.style.borderColor = '#ff0000'
         return false
     }
 }
