@@ -8,16 +8,15 @@ function validate() {
 
     if (regx.test(mail)) {
         box.classList.remove('invalid_email')
-        return true
     }
-    else if (regx_pass.test(password)) {
+    else {
+        box.classList.add('invalid_email')
+    }
+    if (regx_pass.test(password)) {
         box_pass.classList.remove('invalid_email')
-        return true
     }
     else {
         box_pass.classList.add('invalid_email')
-        box.classList.add('invalid_email')
-        return false
     }
 }
 function show_hide_password(target) {
