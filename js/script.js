@@ -6,20 +6,17 @@ const next = document.querySelectorAll('.next')
 
 function validate() {
     const mail = document.getElementById('text').value
+    const box = document.querySelector('.input_container.email')
     var regx = /^([a-zA-Z0-9\._]+)@([a-zA-Z0-9])+.([a-z]+)(.[a-z]+)?$/
     if (regx.test(mail)) {
-        alert('Valid Email')
-        mail.style.border = '1px solid red'
+        box.classList.remove('invalid_email')
         return true
     }
     else {
-        alert('Invalid Email')
-        mail.style.borderColor = '#ff0000'
+        box.classList.add('invalid_email')
         return false
     }
 }
-
-
 
 setTimeout(function () {
     // container_second.style.visibility = 'visible'

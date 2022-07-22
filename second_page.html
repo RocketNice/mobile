@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="widt=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="./css/interface.css">
+    <link rel="stylesheet" href="./css/style_first.css">
+</head>
+
+<body>
+    <div class="container_second two three">
+        <div class="top">
+            <div class="first_logo"><img src="./images/Logo.svg"></div>
+            <div class="masmas_food">MasmasFood</div>
+            <div class="favorite_food">Deliever Favorite Food</div>
+        </div>
+        <form class="form_page">
+            <div class="login_in">Sign Up For Free</div>
+            <div class="input_container email">
+                <img class="logo_block" src="./images/Profile.svg">
+                <input class="input_block" type="text" placeholder="Anamwp . . |">
+            </div>
+            <div class="input_container email second">
+                <img class="logo_block" src="./images/Message.svg">
+                <input class="input_block" id="text" type="text" placeholder="Email">
+            </div>
+            <div class="input_container password">
+                <img class="logo_block" src="./images/Lock.svg">
+                <input class="input_block" id="replace_pass" name="password" type="password" placeholder="Password">
+                <img class="logo_block see_password" onclick="return show_hide_password(this);" src="./images/Show.svg">
+            </div>
+
+            <div class="position_container up">
+                <div class="green_check"><img src="./images/Check List Icon.svg"></div>
+                <div class="check_box">Keep Me Signed In</div>
+            </div>
+            <div class="position_container down">
+                <div class="green_check"><img src="./images/Check List Icon.svg"></div>
+                <div class="check_box">Email Me About Special Pricing</div>
+            </div>
+
+
+            <button class="validate validate_up" onclick="validate()" type="button">Login</button>
+            <a class="forgot_password" href="first_page.html#container_4">already have an account?</a>
+        </form>
+    </div>
+    <script src="./js/script_second.js"></script>
+</body>
+
+</html>
