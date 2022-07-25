@@ -65,4 +65,28 @@ next.forEach(function (el) {
     };
 });
 
+function findGetParameter(parameterName) {
+    var result = null,
+        tmp = [];
+    var items = location.search.substr(1).split("&");
+    for (var index = 0; index < items.length; index++) {
+        tmp = items[index].split("=");
+        if (tmp[0] === parameterName) result = decodeURIComponent(tmp[1]);
+    }
+    return result;
+}
 
+let container_first = document.querySelector('.container')
+let container_del_first = document.querySelector('.container_second.del_first')
+let container_del_second = document.querySelector('.container_second.del_second')
+
+if (findGetParameter('param') === '1') {
+    container_first.classList.add('unsea')
+    container_del_first.classList.add('unsea')
+    container_del_second.classList.add('unsea')
+
+    container_4.style.animationName = 'pages'
+    container_4.style.animationDuration = '1s'
+    container_4.style.animationFillMode = 'forwards'
+    container_4.style.animationIterationCount = '1'
+}

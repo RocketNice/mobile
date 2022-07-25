@@ -261,6 +261,10 @@ a {
     border: 1px solid red !important;
 }
 
+.unsea {
+    display: none;
+}
+
 .invalid_email input {
     border: 1px solid red !important;
 }
