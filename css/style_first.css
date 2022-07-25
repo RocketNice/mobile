@@ -369,8 +369,8 @@ a {
     opacity: 0;
 }
 
-.check_box_color {
-    fill: #625F6D
+.check_box_color svg g rect {
+    fill: url(#paint0_linear_182_1582)
 }
 
 .position_container label:hover svg g rect {
