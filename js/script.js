@@ -80,7 +80,7 @@ let container_first = document.querySelector('.container')
 let container_del_first = document.querySelector('.container_second.del_first')
 let container_del_second = document.querySelector('.container_second.del_second')
 
-if (findGetParameter('param') === '1') {
+if (findGetParameter('param')) {
     container_first.classList.add('unsea')
     container_del_first.classList.add('unsea')
     container_del_second.classList.add('unsea')

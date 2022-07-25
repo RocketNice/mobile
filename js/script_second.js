@@ -31,6 +31,11 @@ function show_hide_password(target) {
     return false;
 }
 
+let check_box = document.querySelectorAll('.chek_box_on_off')
 
-
-
+if (check_box.checked) {
+    check_box.classList.add('check_box_color')
+}
+else {
+    check_box.classList.remove('check_box_color')
+}

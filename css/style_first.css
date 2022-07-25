@@ -366,9 +366,19 @@ a {
 .green_check {
     width: 22px;
     height: 22px;
+    opacity: 0;
 }
 
-.green_check img {
+.check_box_color {
+    fill: #625F6D
+}
+
+.position_container label:hover svg g rect {
+    fill: #E89B1B;
+    cursor: pointer;
+}
+
+.position_container label {
     margin: -10px -34px;
 }
 
