@@ -1,4 +1,6 @@
+var test = 1
 function validate() {
+    test = 1
     const mail = document.getElementById('text').value
     const box = document.querySelector('.input_container.email.second')
     var regx = /^([a-zA-Z0-9\._]+)@([a-zA-Z0-9])+.([a-z]+)(.[a-z]+)?$/
@@ -11,12 +13,23 @@ function validate() {
     }
     else {
         box.classList.add('invalid_email')
+        test = 0
     }
     if (regx_pass.test(password)) {
         box_pass.classList.remove('invalid_email')
     }
     else {
         box_pass.classList.add('invalid_email')
+        test = 0
+    }
+    check_box.forEach(function (el) {
+        if (!el.checked) {
+            test = 0
+        }
+    });
+
+    if (test === 1) {
+        location.href = 'first_page.html';
     }
 }
 function show_hide_password(target) {

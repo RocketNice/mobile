@@ -357,10 +357,8 @@ a {
     font-weight: 400;
     font-size: 12px;
     line-height: 166.52%;
-    text-align: center;
     color: #000000;
     opacity: 0.5;
-    align-self: center;
 }
 
 .green_check {
@@ -369,17 +367,23 @@ a {
     opacity: 0;
 }
 
-.check_box_color svg g rect {
-    fill: url(#paint0_linear_182_1582)
+.check_box_color .font_border {
+    background-color: #37D582;
 }
 
-.position_container label:hover svg g rect {
-    fill: #E89B1B;
+.font_border {
+    width: 22px;
+    height: 22px;
+    background-color: #625F6D;
     cursor: pointer;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 3px;
 }
 
 .position_container label {
-    margin: -10px -34px;
+    margin-right: 8px;
+    margin-left: -31px;
 }
 
 .position_container {
