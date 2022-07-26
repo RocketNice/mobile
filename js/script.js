@@ -4,19 +4,47 @@ const container_3 = document.getElementById('container_3')
 const container_4 = document.getElementById('container_4')
 const next = document.querySelectorAll('.next')
 
+var test = 1
 function validate() {
+    test = 1
+    let mailAndPass = '';
     const mail = document.getElementById('text').value
     const box = document.querySelector('.input_container.email')
     var regx = /^([a-zA-Z0-9\._]+)@([a-zA-Z0-9])+.([a-z]+)(.[a-z]+)?$/
-    if (regx.test(mail)) {
-        box.classList.remove('invalid_email')
-        return true
+    const password = document.getElementById('replace_pass').value
+    const box_pass = document.querySelector('.input_container.password')
+    var regx_pass = /(?=.*[a-z])(?=.*[0-9])/g
+
+    let file = document.getElementById('file').files[0]
+    let reader = new FileReader()
+    reader.readAsText(file)
+    reader.onload = function () {
+        mailAndPass = reader.result.split(', ');
+        console.log(mailAndPass)
+        if (regx.test(mail)) {
+            box.classList.remove('invalid_email')
+        }
+        else {
+            box.classList.add('invalid_email')
+            test = 0
+        }
+        if (regx_pass.test(password)) {
+            box_pass.classList.remove('invalid_email')
+        }
+        else {
+            box_pass.classList.add('invalid_email')
+            test = 0
+        }
+
+        if ((test === 1) && (mailAndPass[0] === mail && mailAndPass[1] === password)) {
+            location.href = 'second_page.html';
+        }
     }
-    else {
-        box.classList.add('invalid_email')
-        return false
+    reader.onerror = function () {
+        alert(reader.error + "Не удалось загрузить страницу")
     }
 }
+
 
 setTimeout(function () {
     // container_second.style.visibility = 'visible'
