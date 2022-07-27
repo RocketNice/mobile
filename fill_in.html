@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="widt=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="./css/interface.css">
+    <link rel="stylesheet" href="./css/style_first.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container_second two three">
+        <div class="top">
+            <div class="up_text">Fill in your bio to get started</div>
+            <div class="next_text">This data will be displayed in your account profile for security</div>
+        </div>
+        <form class="form_page">
+            <div class="input_container email">
+                <input class="input_block" type="text" placeholder="First Name">
+            </div>
+            <div class="input_container email second">
+                <input class="input_block" id="text" type="text" placeholder="Last Name">
+            </div>
+            <div class="input_container password">
+                <input class="input_block" id="replace_pass" name="password" type="password"
+                    placeholder="Mobile Number">
+            </div>
+            <img src="./images/BACKGROUND 2.svg">
+            <button class="validate validate_up" onclick="validate()" type="button">Login</button>
+        </form>
+        <a class="icon_back" href="first_page.html?param">
+            <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect opacity="0.1" width="45" height="45" rx="15" fill="#F9A84D" />
+                <path d="M20.6359 22.182L27 28.5462L25.182 30.3641L17 22.182L25.182 14L27 15.818L20.6359 22.182Z"
+                    fill="#DA6317" />
+            </svg>
+        </a>
+    </div>
+    <script src="./js/script_second.js"></script>
+</body>
+
+</html>

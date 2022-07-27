@@ -1,0 +1,75 @@
+.up_text {
+  font-family: "BentonSans Bold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 131.02%;
+  color: #09051C;
+  max-width: 264px;
+  width: 100%;
+  height: 66px;
+}
+
+.next_text {
+  font-family: "BentonSans Book";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 180.52%;
+  color: #000000;
+  width: 239px;
+  height: 44px;
+  margin-top: 19px;
+}
+
+.container_second {
+  padding: 103px 14px 60px 14px;
+  position: relative;
+}
+
+.form_page {
+  padding-left: unset;
+  padding-right: unset;
+}
+
+.input_container {
+  margin-top: 20px;
+}
+
+.input_block {
+  padding-left: 20px !important;
+}
+
+.validate_up {
+  margin-top: 220px;
+}
+
+.top {
+  padding-left: 11px;
+}
+
+.input_container,
+.input_container input {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 0px 50px rgba(90, 108, 234, 0.07);
+          box-shadow: 0px 0px 50px rgba(90, 108, 234, 0.07);
+  border-radius: 22px;
+}
+
+.two {
+  background-image: none;
+}
+
+.form_page img {
+  position: absolute;
+  left: 34px;
+  top: 0px;
+  opacity: 0.2;
+}
+
+.icon_back {
+  position: absolute;
+  left: 22px;
+  top: 40px;
+  cursor: pointer;
+}

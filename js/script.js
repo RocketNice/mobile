@@ -37,7 +37,7 @@ function validate() {
         }
 
         if ((test === 1) && (mailAndPass[0] === mail && mailAndPass[1] === password)) {
-            location.href = 'second_page.html';
+            location.href = 'fill_in.html';
         }
     }
     reader.onerror = function () {
